@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/padding_default"
+    android:layout_marginBottom="@dimen/padding_default"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/note_checkbox"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="@dimen/padding_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:visibility="gone"
+        android:height="20dp"
+        android:width="20dp"
+        android:button="@drawable/bg_transparent"
+        android:background="@drawable/selector_check_box"
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/note_checkbox"
+        android:background="@drawable/bg_note_model"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/note_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="@string/note_list_page_title"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/note_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/note_text_model_date"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/note_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:text="@string/note_text_model_note"
+            android:ellipsize="end"
+            android:textSize="16sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>
