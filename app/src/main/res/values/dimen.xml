@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_button">8dp</dimen>
+    <dimen name="padding_default">10dp</dimen>
+    <dimen name="page_margin">20dp</dimen>
+    <dimen name="border_radius_default">6dp</dimen>
+</resources>
