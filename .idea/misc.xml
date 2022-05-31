@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/hyebreed/AndroidStudioProjects/kotlinnoteapp/app/src/main/res/drawable/bg_check_box_cheched.xml" value="0.1525" />
+        <entry key="..\:/Users/hyebreed/AndroidStudioProjects/kotlinnoteapp/app/src/main/res/layouts/activities/layout/activity_edit_note.xml" value="0.1953125" />
         <entry key="..\:/Users/hyebreed/AndroidStudioProjects/kotlinnoteapp/app/src/main/res/layouts/activities/layout/activity_note_list.xml" value="0.209375" />
         <entry key="..\:/Users/hyebreed/AndroidStudioProjects/kotlinnoteapp/app/src/main/res/layouts/content/layout/model_note_list.xml" value="0.209375" />
+        <entry key="..\:/Users/hyebreed/AndroidStudioProjects/kotlinnoteapp/app/src/main/res/menu/edit_note_menu.xml" value="0.209375" />
       </map>
     </option>
   </component>

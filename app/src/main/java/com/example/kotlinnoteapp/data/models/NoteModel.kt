@@ -1,4 +1,4 @@
-package com.example.kotlinnoteapp.data
+package com.example.kotlinnoteapp.data.models
 
 import java.text.SimpleDateFormat
 import java.util.*
