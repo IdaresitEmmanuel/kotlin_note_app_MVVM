@@ -69,10 +69,9 @@ class DBProvider private constructor() :
                 assert(cur != null)
                 cur!!.close()
             }
-//            if (filter.equals(NoteFilter.alphabetical)) {
-//
-//
-//            }
+            if (filter == NoteFilter.alphabetical) {
+                noteModelList.sortWith(compareBy { it.title })
+            }
             return noteModelList
         }
 

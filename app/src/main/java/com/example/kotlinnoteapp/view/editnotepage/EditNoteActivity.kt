@@ -16,6 +16,7 @@ import androidx.appcompat.widget.AppCompatEditText
 import androidx.lifecycle.ViewModelProvider
 import com.example.kotlinnoteapp.R
 import com.example.kotlinnoteapp.data.models.NoteModel
+import com.example.kotlinnoteapp.util.ISOStringToDate
 import java.util.*
 
 class EditNoteActivity : AppCompatActivity() {
@@ -41,7 +42,10 @@ class EditNoteActivity : AppCompatActivity() {
         val title = intent.getStringExtra("title")
         val date = intent.getStringExtra("date")
         val body = intent.getStringExtra("body")
-        val model = NoteModel(id, title ?: "", (date ?: Date()) as Date, body ?: "")
+        val model =
+            NoteModel(id, title ?: "",
+                ISOStringToDate(date ?: Date().toString()),
+                body ?: "")
         viewModel =  ViewModelProvider(this)[EditNoteViewModel::class.java]
         if (id != -1) {
             viewModel.setNote(model)
